@@ -1,0 +1,28 @@
+[
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:43:19.611012+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 16.3,
+      "windspeed": 10.4,
+      "winddirection": 76,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:43:19.611012+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 16.3,
+      "windspeed": 10.4,
+      "winddirection": 76,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  }
+]

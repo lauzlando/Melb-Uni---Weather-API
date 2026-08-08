@@ -1,0 +1,253 @@
+import json
+from datetime import datetime,timezone
+import requests
+from weather_corrected import get_weather
+
+def fetch_all_cities(cities):
+    """ 
+    Fetch weather for a list of city dictionaries. 
+
+    Each city dict must contain
+    - name: City name as a string
+    - lat: latitude as a float
+    - lon: longitude as a float
+
+    Returns:
+    A list of dictionaries, each shaped as: 
+
+    { 
+    "city": "Sydney", 
+    "fetched_at": "2026-05-24T05:05:52.172700+00:00", 
+    "weather": {....}: Dict returned by get_weather
+    """
+
+    results=[]
+
+    for city_info in cities:
+
+        if "name" not in city_info or "lat" not in city_info or "lon" not in city_info:
+            continue
+
+        city_name = city_info["name"]
+        latitude = city_info["lat"]
+        longitude = city_info["lon"] 
+
+        #Call the weather API
+        weather_data = get_weather(latitude, longitude)
+        print("DEBUG:", city_name, weather_data)
+
+        if weather_data is None or "temperature" not in weather_data:
+            weather_data = {"temperature": None}
+
+        #Create a timestamp in UTC
+        timestamp=datetime.now(timezone.utc).isoformat()
+
+        result_entry = {
+            "city": city_name,
+            "fetched_at": timestamp,
+            "weather": weather_data
+        }
+
+        #Add to the list
+        results.append(result_entry)
+
+    return results
+
+def update_log(log_path, new_results):
+    """
+    Append new weather results to a JSON log file.
+
+    Assumptions:
+    - If the file does not exist, create it.
+    - If the file exists but is empty or corrupt, override with new_results.
+    """
+    
+    if isinstance(new_results,dict):
+        new_results = [new_results]
+    
+    try:
+        with open (log_path, "r") as file:
+            existing_log = json.load(file)
+        
+        if not isinstance(existing_log,list):
+            existing_log = []
+    except (FileNotFoundError, json.JSONDecodeError):
+        existing_log = []
+    
+    #add new results to log
+    for entry in new_results:
+        existing_log.append(entry)
+
+    #save the updated_log back to disk
+    with open(log_path,"w") as file:
+        json.dump(existing_log,file,indent=2)
+
+def summarise_log(log_path):
+    """
+    Read the log file and perform action for summary statistics
+
+    Returns:
+        {
+            "total_records": int,
+            "cities_tracked": sorted list of unique values,
+            "latest_fetch": ISO timestamp string,
+
+            "avg_temperature": float rounded to 2 decimals
+        }
+    
+    Assumptions:
+    - If log is empty or missing, return all fields with None or empty values. 
+    - If a record has weather=None, it is ignored for temperature averaging. 
+    """ 
+    try:
+        with open(log_path, "r") as file:
+            log=json.load(file)
+        
+        if not isinstance(log, list):
+            log = []
+          
+    except (FileNotFoundError, json.JSONDecodeError):
+        log = []
+
+    #if log is empty return empty Stats 
+    if len(log)==0:
+        return {
+            "total_records": 0,
+            "cities_tracked":[],
+            "latest_fetch": None,
+            "avg_temperature": None
+        }
+    # Count the records
+    total_records = len(log)
+
+    # Collect city names
+    city_names = []
+    for entry in log:
+        city = entry["city"]
+        if city not in city_names:
+            city_names.append(city)
+    
+    city_names.sort()
+
+    #FInd latest timestamp
+    latest_fetch = log[0]["fetched_at"]
+    for entry in log:
+        if entry ["fetched_at"] > latest_fetch:
+            latest_fetch = entry["fetched_at"]
+
+    #calculate average temperature
+    temperatures = []
+    for entry in log:
+        weather = entry["weather"]
+        if weather is not None:
+            temp = weather.get("temperature")
+            if isinstance(temp, (int, float)):
+                
+                temperatures.append(temp)
+
+    if len(temperatures) == 0:
+        avg_temperature = None
+    else:
+        avg_temperature = round(sum(temperatures) / len(temperatures), 2)
+        
+    return{
+        "total_records": total_records,
+        "cities_tracked": city_names,
+        "latest_fetch": latest_fetch,
+        "avg_temperature": avg_temperature
+    }
+import os
+
+if os.path.exists("test_weather_log.json"):
+    os.remove("test_weather_log.json")
+
+def verify_correctness():
+    """
+    Runs a suite of tests to verify correctness. 
+    Prints a summary of pass / failed tests
+
+    - Used temporary files (test_log.json)
+    - Requires internet unless get_weather() is mocked data. 
+
+    """
+    # MOCK get_weather so tests do NOT require internet
+    def get_weather(lat, lon):
+        return {"temperature": 22.0}
+    
+    print("\n===Running Tests ===")
+
+    tests_passed = 0
+    tests_failed = 0
+
+    def record(result, description):
+        nonlocal tests_passed, tests_failed
+        print("DEBUG RESULT:", result)
+        if result:
+            print(f"PASSED: {description}")
+            tests_passed +=1
+        else:
+            print(f"FAILED: {description}")
+            tests_failed +=1
+
+    sample_cities = [
+        {"name": "Sydney", "lat": -33.87, "lon": 151.21}
+    ]   
+    results=fetch_all_cities(sample_cities)
+
+    record(isinstance(results, list), "fetch_all_cities returns a list")
+    record(len(results) ==1, "fetch_all_cities returns correct length")
+    record(len(results) > 0 and "city" in results[0], "fetch_all_cities includes 'city'") 
+    record(len(results) > 0 and "fetched_at" in results[0], "fetch_all_cities includes 'fetched_at'")
+    record(len(results) > 0 and "weather" in results[0], "fetch_all_cities includes 'weather'")
+
+    test_file = "test_weather_log.json"
+    update_log(test_file, results)
+
+    try:
+        with open(test_file, "r") as f:
+            data = json.load(f)      
+        record(isinstance(data, list), "update_log creates a list")
+    except:
+        record(False, "update_log creates a list")
+
+    #append again 
+    update_log(test_file, results)
+    with open(test_file, "r") as f:
+        data = json.load(f)
+    
+    record(len(data) == 2, "update_log appends entries")
+
+    summary = summarise_log(test_file)
+
+    record(summary["total_records"] == 2, "summarise_log counts correctly")
+    record(summary["cities_tracked"] == ["Sydney"], "summarise_log tracks cities")
+    record(summary["latest_fetch"] is not None, "summarise_log finds latest timestamp")
+
+    empty_file = "empty_log.json"
+    with open(empty_file, "w") as f:
+        json.dump([], f)
+
+    empty_summmary = summarise_log(empty_file)
+
+    record(empty_summmary["total_records"] == 0, "summarise_log handles emppty log")
+    record(empty_summmary["avg_temperature"] is None, "summarise_log handles missing temps ")
+
+    print("\n=== Test Summary ===")
+    print("Passed:", tests_passed)
+    print("Failed:", tests_failed)
+    print("====================\n")
+
+
+    # Run tests if executed correctly
+if __name__ == "__main__":
+    verify_correctness()
+
+    four_cities = [
+        {"name": "Sydney", "lat": -33.87, "lon": 151.21},
+        {"name": "Melbourne", "lat": -37.81, "lon": 144.96},
+        {"name": "Brisbane", "lat": -27.47, "lon": 153.03},
+        {"name": "Perth", "lat": -31.95, "lon": 115.86}
+    ]
+    
+    results = fetch_all_cities(four_cities)
+    update_log("weather_log.json", results)

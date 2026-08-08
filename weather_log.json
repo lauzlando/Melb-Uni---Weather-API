@@ -1,0 +1,834 @@
+[
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T03:10:15.913615+00:00",
+    "weather": {
+      "time": "2026-08-08T13:00",
+      "interval": 900,
+      "temperature": 16.4,
+      "windspeed": 4.5,
+      "winddirection": 106,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T03:10:17.186046+00:00",
+    "weather": {
+      "time": "2026-08-08T13:00",
+      "interval": 900,
+      "temperature": 15.1,
+      "windspeed": 19.0,
+      "winddirection": 6,
+      "is_day": 1,
+      "weathercode": 3
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T03:10:18.491412+00:00",
+    "weather": {
+      "time": "2026-08-08T13:00",
+      "interval": 900,
+      "temperature": 20.7,
+      "windspeed": 3.8,
+      "winddirection": 82,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T03:10:19.805213+00:00",
+    "weather": {
+      "time": "2026-08-08T11:00",
+      "interval": 900,
+      "temperature": 10.1,
+      "windspeed": 24.2,
+      "winddirection": 209,
+      "is_day": 1,
+      "weathercode": 81
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T03:39:28.392450+00:00",
+    "weather": {
+      "time": "2026-08-08T13:30",
+      "interval": 900,
+      "temperature": 16.5,
+      "windspeed": 6.8,
+      "winddirection": 90,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T03:39:29.711494+00:00",
+    "weather": {
+      "time": "2026-08-08T13:30",
+      "interval": 900,
+      "temperature": 14.9,
+      "windspeed": 18.7,
+      "winddirection": 7,
+      "is_day": 1,
+      "weathercode": 2
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T03:39:31.016035+00:00",
+    "weather": {
+      "time": "2026-08-08T13:30",
+      "interval": 900,
+      "temperature": 21.0,
+      "windspeed": 4.9,
+      "winddirection": 66,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T03:39:32.338976+00:00",
+    "weather": {
+      "time": "2026-08-08T11:30",
+      "interval": 900,
+      "temperature": 10.8,
+      "windspeed": 24.7,
+      "winddirection": 209,
+      "is_day": 1,
+      "weathercode": 53
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:21:18.383523+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 16.4,
+      "windspeed": 9.8,
+      "winddirection": 77,
+      "is_day": 1,
+      "weathercode": 1
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:21:19.791611+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 14.9,
+      "windspeed": 18.1,
+      "winddirection": 9,
+      "is_day": 1,
+      "weathercode": 1
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:21:21.133771+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 21.0,
+      "windspeed": 6.8,
+      "winddirection": 61,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:21:22.568779+00:00",
+    "weather": {
+      "time": "2026-08-08T12:15",
+      "interval": 900,
+      "temperature": 11.6,
+      "windspeed": 23.6,
+      "winddirection": 208,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:24:25.152245+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 16.4,
+      "windspeed": 9.8,
+      "winddirection": 77,
+      "is_day": 1,
+      "weathercode": 1
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:24:26.436241+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 14.9,
+      "windspeed": 18.1,
+      "winddirection": 9,
+      "is_day": 1,
+      "weathercode": 1
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:24:28.179133+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 21.0,
+      "windspeed": 6.8,
+      "winddirection": 61,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:24:29.794700+00:00",
+    "weather": {
+      "time": "2026-08-08T12:15",
+      "interval": 900,
+      "temperature": 11.6,
+      "windspeed": 23.6,
+      "winddirection": 208,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:25:34.705365+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 16.4,
+      "windspeed": 9.8,
+      "winddirection": 77,
+      "is_day": 1,
+      "weathercode": 1
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:25:35.989204+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 14.9,
+      "windspeed": 18.1,
+      "winddirection": 9,
+      "is_day": 1,
+      "weathercode": 1
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:25:37.352229+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 21.0,
+      "windspeed": 6.8,
+      "winddirection": 61,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:25:38.635963+00:00",
+    "weather": {
+      "time": "2026-08-08T12:15",
+      "interval": 900,
+      "temperature": 11.6,
+      "windspeed": 23.6,
+      "winddirection": 208,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:27:10.564609+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 16.4,
+      "windspeed": 9.8,
+      "winddirection": 77,
+      "is_day": 1,
+      "weathercode": 1
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:27:11.845799+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 14.9,
+      "windspeed": 18.1,
+      "winddirection": 9,
+      "is_day": 1,
+      "weathercode": 1
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:27:13.135942+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 21.0,
+      "windspeed": 6.8,
+      "winddirection": 61,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:27:14.412541+00:00",
+    "weather": {
+      "time": "2026-08-08T12:15",
+      "interval": 900,
+      "temperature": 11.6,
+      "windspeed": 23.6,
+      "winddirection": 208,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:29:17.260825+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 16.4,
+      "windspeed": 9.8,
+      "winddirection": 77,
+      "is_day": 1,
+      "weathercode": 1
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:29:18.591928+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 14.9,
+      "windspeed": 18.1,
+      "winddirection": 9,
+      "is_day": 1,
+      "weathercode": 1
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:29:19.907645+00:00",
+    "weather": {
+      "time": "2026-08-08T14:15",
+      "interval": 900,
+      "temperature": 21.0,
+      "windspeed": 6.8,
+      "winddirection": 61,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:29:21.190787+00:00",
+    "weather": {
+      "time": "2026-08-08T12:15",
+      "interval": 900,
+      "temperature": 11.6,
+      "windspeed": 23.6,
+      "winddirection": 208,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:30:12.203571+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 16.3,
+      "windspeed": 10.4,
+      "winddirection": 76,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:30:13.474731+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 15.2,
+      "windspeed": 18.1,
+      "winddirection": 10,
+      "is_day": 1,
+      "weathercode": 2
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:30:14.780655+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 20.9,
+      "windspeed": 7.3,
+      "winddirection": 62,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:30:16.063762+00:00",
+    "weather": {
+      "time": "2026-08-08T12:30",
+      "interval": 900,
+      "temperature": 11.5,
+      "windspeed": 22.3,
+      "winddirection": 207,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:31:04.359689+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 16.3,
+      "windspeed": 10.4,
+      "winddirection": 76,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:31:05.643185+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 15.2,
+      "windspeed": 18.1,
+      "winddirection": 10,
+      "is_day": 1,
+      "weathercode": 2
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:31:06.920218+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 20.9,
+      "windspeed": 7.3,
+      "winddirection": 62,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:31:08.198922+00:00",
+    "weather": {
+      "time": "2026-08-08T12:30",
+      "interval": 900,
+      "temperature": 11.5,
+      "windspeed": 22.3,
+      "winddirection": 207,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:32:42.434403+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 16.3,
+      "windspeed": 10.4,
+      "winddirection": 76,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:32:45.135779+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 15.2,
+      "windspeed": 18.1,
+      "winddirection": 10,
+      "is_day": 1,
+      "weathercode": 2
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:32:46.482389+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 20.9,
+      "windspeed": 7.3,
+      "winddirection": 62,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:32:47.778799+00:00",
+    "weather": {
+      "time": "2026-08-08T12:30",
+      "interval": 900,
+      "temperature": 11.5,
+      "windspeed": 22.3,
+      "winddirection": 207,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:35:35.271547+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 16.3,
+      "windspeed": 10.4,
+      "winddirection": 76,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:35:36.648994+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 15.2,
+      "windspeed": 18.1,
+      "winddirection": 10,
+      "is_day": 1,
+      "weathercode": 2
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:35:38.082773+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 20.9,
+      "windspeed": 7.3,
+      "winddirection": 62,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:35:39.359152+00:00",
+    "weather": {
+      "time": "2026-08-08T12:30",
+      "interval": 900,
+      "temperature": 11.5,
+      "windspeed": 22.3,
+      "winddirection": 207,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:36:42.287788+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 16.3,
+      "windspeed": 10.4,
+      "winddirection": 76,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:36:43.566717+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 15.2,
+      "windspeed": 18.1,
+      "winddirection": 10,
+      "is_day": 1,
+      "weathercode": 2
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:36:44.871868+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 20.9,
+      "windspeed": 7.3,
+      "winddirection": 62,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:36:46.179206+00:00",
+    "weather": {
+      "time": "2026-08-08T12:30",
+      "interval": 900,
+      "temperature": 11.5,
+      "windspeed": 22.3,
+      "winddirection": 207,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:37:39.166407+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 16.3,
+      "windspeed": 10.4,
+      "winddirection": 76,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:37:40.471895+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 15.2,
+      "windspeed": 18.1,
+      "winddirection": 10,
+      "is_day": 1,
+      "weathercode": 2
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:37:41.787084+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 20.9,
+      "windspeed": 7.3,
+      "winddirection": 62,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:37:43.135890+00:00",
+    "weather": {
+      "time": "2026-08-08T12:30",
+      "interval": 900,
+      "temperature": 11.5,
+      "windspeed": 22.3,
+      "winddirection": 207,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:38:37.621430+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 16.3,
+      "windspeed": 10.4,
+      "winddirection": 76,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:38:38.977958+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 15.2,
+      "windspeed": 18.1,
+      "winddirection": 10,
+      "is_day": 1,
+      "weathercode": 2
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:38:40.245872+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 20.9,
+      "windspeed": 7.3,
+      "winddirection": 62,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:38:41.537423+00:00",
+    "weather": {
+      "time": "2026-08-08T12:30",
+      "interval": 900,
+      "temperature": 11.5,
+      "windspeed": 22.3,
+      "winddirection": 207,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:39:27.964671+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 16.3,
+      "windspeed": 10.4,
+      "winddirection": 76,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:39:29.258567+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 15.2,
+      "windspeed": 18.1,
+      "winddirection": 10,
+      "is_day": 1,
+      "weathercode": 2
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:39:30.540609+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 20.9,
+      "windspeed": 7.3,
+      "winddirection": 62,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:39:31.918578+00:00",
+    "weather": {
+      "time": "2026-08-08T12:30",
+      "interval": 900,
+      "temperature": 11.5,
+      "windspeed": 22.3,
+      "winddirection": 207,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-08-08T04:43:20.908587+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 16.3,
+      "windspeed": 10.4,
+      "winddirection": 76,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Melbourne",
+    "fetched_at": "2026-08-08T04:43:22.165754+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 15.2,
+      "windspeed": 18.1,
+      "winddirection": 10,
+      "is_day": 1,
+      "weathercode": 2
+    }
+  },
+  {
+    "city": "Brisbane",
+    "fetched_at": "2026-08-08T04:43:23.437766+00:00",
+    "weather": {
+      "time": "2026-08-08T14:30",
+      "interval": 900,
+      "temperature": 20.9,
+      "windspeed": 7.3,
+      "winddirection": 62,
+      "is_day": 1,
+      "weathercode": 0
+    }
+  },
+  {
+    "city": "Perth",
+    "fetched_at": "2026-08-08T04:43:24.723508+00:00",
+    "weather": {
+      "time": "2026-08-08T12:30",
+      "interval": 900,
+      "temperature": 11.5,
+      "windspeed": 22.3,
+      "winddirection": 207,
+      "is_day": 1,
+      "weathercode": 80
+    }
+  }
+]

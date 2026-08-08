@@ -1,0 +1,16 @@
+[
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-01-01T00:00:00Z",
+    "weather": {
+      "temperature": 22
+    }
+  },
+  {
+    "city": "Sydney",
+    "fetched_at": "2026-01-01T00:00:00Z",
+    "weather": {
+      "temperature": 22
+    }
+  }
+]
